@@ -5,14 +5,9 @@ sap.ui.define([
 ], function (UIComponent, JSONModel, ResourceModel) {
     "use strict";
     return UIComponent.extend("sap.ui.demo.walkthrough.Component", {
-        metadata: {
-            "interfaces": ["sap.ui.core.IAsyncContentCreation"],
-            "rootView": {
-                "viewName": "sap.ui.demo.walkthrough.view.App",
-                "type": "XML",
-                /*"async": true, // implicitly set via the sap.ui.core.IAsyncContentCreation interface*/
-                "id": "app"
-            }
+        metadata : {
+            interfaces: ["sap.ui.core.IAsyncContentCreation"],
+            manifest: "json"
         },
 
         init: function () {
