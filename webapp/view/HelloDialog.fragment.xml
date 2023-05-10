@@ -4,8 +4,18 @@
    <Dialog
       id="helloDialog"
       title="Message for you: {/recipient/name}">
+      <content>
+         <core:Icon
+            src="sap-icon://hello-world"
+            size="8rem"
+            class="sapUiMediumMargin"/>
+         <FormattedText
+                        htmlText="Hello {/recipient/name}. This is a SAPUI5 test app"
+                        class="sapUiSmallMargin" />
+      </content>
       <beginButton>
          <Button
+            icon="sap-icon://accept"
             text="{i18n>dialogCloseButtonText}"
             press=".onCloseDialog"/>
       </beginButton>
