@@ -10,7 +10,7 @@
             size="8rem"
             class="sapUiMediumMargin"/>
          <FormattedText
-                        htmlText="Hello {/recipient/name}. This is a SAPUI5 test app"
+                        htmlText="Hello {/recipient/name}. This is a SAPUI5 test app."
                         class="sapUiSmallMargin" />
       </content>
       <beginButton>
