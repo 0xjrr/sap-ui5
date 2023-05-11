@@ -18,7 +18,6 @@
                 }
                 }"
                 numberUnit="{view>/currency}"
-                //ternary operator for state
                 numberState="{= ${invoice>ExtendedPrice} > 50 ? 'Error' : 'Success' }"/>
         </items>
     </List>
