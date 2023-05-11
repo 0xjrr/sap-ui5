@@ -17,14 +17,15 @@
                 "{{<keyword2>}}"
             ]
         },
-        "dataSources": {
-            "<dataSourceAlias>": {
-                "uri": "<uri>",
-                "settings": {
-                    "localUri": "<localUri>"
-                }
-            }
-        }
+		"dataSources": {
+			"invoiceRemote": {
+				"uri": "https://services.odata.org/V2/Northwind/Northwind.svc/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0"
+				}
+			}
+		}
     },
     "sap.ui": {
         "technology": "UI5",
