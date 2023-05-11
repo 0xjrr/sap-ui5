@@ -1,0 +1,13 @@
+FROM node:19.9.0
+
+WORKDIR /usr/app
+
+RUN npm install --global --unsafe-perm @ui5/cli
+
+COPY . .
+
+RUN npm install
+
+EXPOSE 8080
+
+CMD ["npm","start"]
