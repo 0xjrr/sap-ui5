@@ -29,6 +29,8 @@ sap.ui.define([
                 fallbackLocale: "",
             });
             this.setModel(i18nModel, "i18n");
+            // views based on the url/hash
+			this.getRouter().initialize();
         }
     });
 });
