@@ -19,12 +19,12 @@
                     class="myCustomButton" />
                 <Input
                     value="{/recipient/name}"
-                    description="Hello {/recipient/name}"
                     valueLiveUpdate="true"
                     width="60%" />
+                    <!-- description="Hello {/recipient/name}" -->
                 <FormattedText
-                        htmlText="Hello {/recipient/name}"
-                        class="sapUiSmallMargin  sapThemeHighlight-asColor myCustomText" />
+                    htmlText="Hello {/recipient/name}"
+                    class="sapUiSmallMargin  sapThemeHighlight-asColor myCustomText" />
                 </content>
         </Panel>
 </mvc:View>
