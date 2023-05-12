@@ -29,8 +29,9 @@ sap.ui.define([
         onRatingChange: function (oEvent) {
 			var fValue = oEvent.getParameter("value");
 			var oResourceBundle = this.getView().getModel("i18n").getResourceBundle();
+            var sRecipient = this.getView().getModel().getProperty("/recipient/name");
 
-			MessageToast.show(oResourceBundle.getText("ratingConfirmation", [fValue]));
+			MessageToast.show(oResourceBundle.getText("ratingConfirmation", [sRecipient, fValue]));
 		}
     });
 });
